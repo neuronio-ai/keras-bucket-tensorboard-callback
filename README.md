@@ -1,6 +1,9 @@
 # Keras Bucket Tensorboard Callback
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PyPI version](https://badge.fury.io/py/keras-bucket-tensorboard-callback.svg)](https://badge.fury.io/py/keras-bucket-tensorboard-callback)
+[![Maintainability](https://api.codeclimate.com/v1/badges/74540030ca0b44ff2dfb/maintainability)](https://codeclimate.com/github/neuronio-ai/keras_bucket_tensorboard_callback/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/74540030ca0b44ff2dfb/test_coverage)](https://codeclimate.com/github/neuronio-ai/keras_bucket_tensorboard_callback/test_coverage)
 
 A Keras Callback that uploads your Tensorboard logs to a Cloud Bucket
 
@@ -8,7 +11,9 @@ A Keras Callback that uploads your Tensorboard logs to a Cloud Bucket
 is needed to support AWS S3, so feel free to contribute to this project.*
 
 ## Installation
-(wait for PyPI publishing)
+```bash
+pip install pip install keras-bucket-tensorboard-callback
+```
 
 ## Basic usage
 
