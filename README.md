@@ -12,7 +12,7 @@ is needed to support AWS S3, so feel free to contribute to this project.*
 
 ## Installation
 ```bash
-pip install pip install keras-bucket-tensorboard-callback
+pip install keras-bucket-tensorboard-callback
 ```
 
 ## Basic usage
@@ -35,6 +35,10 @@ model.fit(
     callbacks=[bucket_callback]
 )
 ```
+
+Make sure you have access to the provided bucket. For GCP, you should have
+the `GOOGLE_APPLICATION_CREDENTIALS` env set, pointing to your `json` key
+file.
 
 ## Viewing the results on TensorBoard
 With tensorboard installed your environment, run:
