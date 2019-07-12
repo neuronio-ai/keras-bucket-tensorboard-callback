@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='keras-bucket-tensorboard-callback',
-    version='1.0.3',
+    version='1.0.4',
     author='Adriano Dennanni',
     author_email='adriano.dennanni@gmail.com',
     description='A Keras Callback that uploads your Tensorboard logs to a Cloud Bucket',

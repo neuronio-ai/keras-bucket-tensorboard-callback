@@ -85,16 +85,16 @@ class BucketTensorBoard(TensorBoard):
                  embeddings_data=None,
                  update_freq='epoch'):
         super(BucketTensorBoard, self).__init__(
-            histogram_freq,
-            batch_size,
-            write_graph,
-            write_grads,
-            write_images,
-            embeddings_freq,
-            embeddings_layer_names,
-            embeddings_metadata,
-            embeddings_data,
-            update_freq)
+            histogram_freq=histogram_freq,
+            batch_size=batch_size,
+            write_graph=write_graph,
+            write_grads=write_grads,
+            write_images=write_images,
+            embeddings_freq=embeddings_freq,
+            embeddings_layer_names=embeddings_layer_names,
+            embeddings_metadata=embeddings_metadata,
+            embeddings_data=embeddings_data,
+            update_freq=update_freq)
 
         # Parses the bucket_uri
         if bucket_uri.startswith('gs://'):
