@@ -4,11 +4,9 @@ import warnings
 from hashlib import md5
 from tempfile import gettempdir
 
-import numpy as np
 from google.cloud import storage
 from keras import backend as K
 from keras.callbacks import TensorBoard
-from keras.engine.training_utils import standardize_input_data
 
 try:
     import tensorflow as tf
@@ -86,7 +84,17 @@ class BucketTensorBoard(TensorBoard):
                  embeddings_metadata=None,
                  embeddings_data=None,
                  update_freq='epoch'):
-        super(BucketTensorBoard, self).__init__()
+        super(BucketTensorBoard, self).__init__(
+            histogram_freq,
+            batch_size,
+            write_graph,
+            write_grads,
+            write_images,
+            embeddings_freq,
+            embeddings_layer_names,
+            embeddings_metadata,
+            embeddings_data,
+            update_freq)
 
         # Parses the bucket_uri
         if bucket_uri.startswith('gs://'):
